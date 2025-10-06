@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .card {
+            width: 500px;
+            height: 350px;
+            perspective: 900px;
+        }
+
+        header {
+            z-index: 10;
+        }
+
+        .card {
+            position: relative;
+            z-index: 1;
+            padding-top: 120px;
+        }
+
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.9s;
+            transform-style: preserve-3d;
+            
+        }
+
+        .card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 3px solid white;
+            box-shadow: 0px 0px 2px 6px rgb(156, 116, 5);
+        }
+
+        .card-front img,
+        .card-back img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            box-shadow: 3px solid gold;
+        }
+
+        .card-back {
+            transform: rotateY(180deg);
+        }
+
+@media (max-width :768px){
+    .card-front,
+        .card-back {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 3px solid white;
+            box-shadow: 0px 0px 2px 6px rgb(156, 116, 5);
+        }
+
+
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- ========================================================================== -->
+    <!-- same for all pages -->
+
+    <header>
+        <div class="mm">
+
+            <div>
+                <a href="index.html"> <img class="logo" src="logo.png" alt="loading..."> </a>
+            </div>
+
+            <div class="hm">
+                <h1>My Personal Website</h1>
+            </div>
+
+            <div>
+
+                <nav class="dis">
+                    <div><a class="nav" href="index.html"><button class="dd">Home</button></a></div>
+                    <div><a class="nav" href="about.html"><button class="dd">About</button></a></div>
+                    <div><a class="nav" href="project.html"><button class="dd">Project</button></a></div>
+                    <div><a class="nav" href="achievement.html"><button class="dd">Achievement</button></a></div>
+                    <div><a class="nav" href="contact.html"><button class="dd">Contact</button></a></div>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+    <!-- =========================================================================== -->
+
+    <div class="rfle">
+        <div class="ahh">
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img class="sun" src="sunn.png" alt="Photo 1">
+                    </div>
+                    <div class="card-back">
+                        <img class="sun" src="sunny.png" alt="Photo 2">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="x">
+                <p>This is a simple website built using just HTML and CSS.<br> It’s all about creating a clean and
+                    nice-looking page without any fancy scripts or backend stuff.</p>
+            </div>
+
+            <div class="q">
+                <nav class="di">
+                    <div>
+                        <a class="nav" href="https://ramkumarsdckap-ui.github.io/Sunny-Cafe/">
+                            <button class="d">Deployed</button>
+                        </a>
+                    </div>
+                </nav>
+
+                <nav class="di">
+                    <div>
+                        <a class="nav" href="https://github.com/ramkumarsdckap-ui/Sunny-Cafe.git">
+                            <button class="d"> Repository</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <hr class="hr">
+
+        <div class="ahh">
+
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="change.png" alt="Photo 1">
+                    </div>
+                    <div class="card-back">
+                        <img src="change log.png" alt="Photo 2">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="x">
+                <p>This is a simple website built using just HTML and CSS.<br> It’s all about creating a clean and
+                    nice-looking page without any fancy scripts or backend stuff.</p>
+            </div>
+
+            <div class="q">
+                <nav class="di">
+                    <div>
+                        <a class="nav" href="https://ramkumarsdckap-ui.github.io/timing-task/">
+                            <button class="d">Deployed</button>
+                        </a>
+                    </div>
+                </nav>
+                <nav class="di">
+                    <div>
+                        <a class="nav" href="https://ramkumarsdckap-ui.github.io/Sunny-Cafe/">
+                            <button class="d">Repository</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+
+        <hr class="hr">
+
+        <div class="ahh">
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="pot.png" alt="Photo 1">
+                    </div>
+                    <div class="card-back">
+                        <img src="pothys.png" alt="Photo 2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="x">
+                <p>This is a simple website built using just HTML and CSS.<br> It’s all about creating a clean and
+                    nice-looking page without any fancy scripts or backend stuff.</p>
+            </div>
+
+            <div class="q">
+                <nav class="di">
+                    <div>
+                        <a class="nav" href=" https://ramkumarsdckap-ui.github.io/Pothys-clone/">
+                            <button class="d">Deployed</button>
+                        </a>
+                    </div>
+                </nav>
+
+                <nav class="di">
+                    <div>
+                        <a class="nav" href="https://ramkumarsdckap-ui.github.io/Sunny-Cafe/">
+                            <button class="d">Repository</button>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+        </div>
+        <footer class="rit">
+            <p>&#169 2025 All Rights Reserved</p>
+        <div>
+            <a href="https://www.linkedin.com/feed/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf0e1;</i></a>
+            <a href="https://github.com/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf09b;</i></a>
+            <a href="https://www.instagram.com/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf16d;</i></a>
+            <a href="https://www.youtube.com/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf16a;</i></a>
+        </div>
+        </footer>
+    </div>
+</body>
+
+</html>

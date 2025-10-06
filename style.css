@@ -1,0 +1,403 @@
+/* ========================================================== */
+/* Header + Home */
+.hm {
+  font-size: 24px;
+  color: aliceblue;
+  margin-top: 1%;
+}
+.dis {
+  display: flex;
+  gap: 20px;
+  font-size: 20px;
+  margin-top: 9%;
+}
+.mm {
+  display: flex;
+  background-color: rgb(87, 113, 126);
+  gap: 200px;
+  box-shadow: 0px 0px 4px 6px rgb(94, 92, 92);
+}
+.nav {
+  color: aliceblue;
+}
+header {
+  position: sticky;
+  top: 0px;
+}
+.pa {
+  font-size: 100px;
+}
+.dd {
+  background-color: rgb(87, 113, 126);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 19px;
+  box-shadow: 0px 0px 2px 2px rgb(156, 116, 5);
+}
+.dd:hover {
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(87, 113, 126);
+  box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+  background-color: rgb(156, 116, 5);
+}
+.logo {
+  height: 110px;
+  padding: 10px;
+}
+body {
+  background-image: url(back.png);
+  background-size: cover;
+  color: white;
+}
+.hi {
+  background-color: rgb(56, 86, 100);
+  width: 50%;
+  margin: auto;
+  margin-top: 200px;
+  line-height: 80px;
+  box-shadow: 0px 0px 4px 6px rgb(255, 255, 255);
+  border: 4px solid rgb(94, 92, 92);
+  border-radius: 10px;
+}
+.gig {
+  font-size: 19px;
+  text-align: center;
+}
+.se {
+  color: rgba(255, 255, 255, 0.925);
+  text-align: center;
+  font-size: 20px;
+}
+.kk {
+  width: 15%;
+  margin: auto;
+}
+/* ========================================================== */
+/* project*/
+.ahh {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sum {
+  display: flex;
+  flex-direction: column;
+}
+.hea {
+  align-items: center;
+  font-size: 24px;
+  color: rgb(207, 174, 83);
+}
+.x {
+  font-size: 30px;
+}
+.d {
+  background-color: rgb(134, 136, 138);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 19px;
+  box-shadow: 0px 0px 2px 2px rgb(131, 125, 125);
+}
+.d:hover {
+  color: black;
+  border: 2px solid rgb(129, 129, 129);
+  box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+}
+.im {
+  width: 40%;
+}
+.hea {
+  text-align: center;
+}
+.hr {
+  margin-top: 50px;
+}
+.di {
+  margin-top: 20%;
+}
+.rfle {
+
+  margin-top: 100px;
+  margin-left: 150px;
+}
+/* ======================================================================== */
+/* about */
+.mee {
+  border-radius: 10px;
+  width: 250px;  
+  height: 450px;
+}
+.q {
+  display: flex;
+  gap: 20px;
+}
+.y {
+  display: flex;
+}
+.lin {
+  height: 100px;
+  border-radius: 10px;
+}
+.l {
+  gap: 30px;
+  height: 100px;
+}
+.nah {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+.ha {
+  background-color: rgb(56, 86, 100);
+  width: 50%;
+  margin: auto;
+  margin-top: 10%;
+  line-height: 30px;
+  box-shadow: 0px 0px 4px 6px rgb(255, 255, 255);
+  border: 4px solid rgb(94, 92, 92);
+}
+/* ============================================================== */
+/* contact form */
+.rep,
+.rp,
+.rap,
+.kis {
+  text-align: center;
+  line-height: 30px;
+}
+
+.rap {
+  line-height: 70px;
+}
+
+.get {
+  width: 600px;
+}
+
+.form {
+  line-height: 80px;
+  color: #ffffff;
+  width: 37%;
+}
+
+.p {
+  height: 140px;
+  width: 590px;
+  border-radius: 7px;
+  border-color: rgb(2, 2, 2);
+}
+
+.p:hover {
+  box-shadow: rgb(156, 116, 5) 0px 0px 2px 4px;
+}
+
+.rent {
+  width: 95%;
+  border: none;
+  border-bottom: 2px solid #ffffff;
+  font-size: 14px;
+  background: transparent;
+  padding: 9px 9px 9px 9px;
+}
+
+.rent:hover {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgb(156, 116, 5) 0px 0px 2px 4px;
+}
+
+.tom {
+  box-shadow: color(rgb(7, 7, 7)) 0px 0px 2px 2px;
+}
+
+.pp {
+  background-color: rgb(91, 96, 100);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-size: 19px;
+  box-shadow: 0px 0px 2px 2px rgb(131, 125, 125);
+}
+
+.pp:hover {
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(129, 129, 129);
+  box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
+}
+
+.rit {
+  text-align: center;
+  line-height: 90px;
+  font-size: 20px;
+}
+
+.ccc {
+  text-align: center;
+  line-height: 150px;
+}
+.test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ====================================================== */
+/* Achievement */
+.pac {
+  display: flex;
+}
+.iim {
+  width: 90%;
+  padding-left: 5%;
+  padding-top: 7%;
+}
+.paru {
+  width: 100%;
+}
+.fa {
+  height: 50px;
+  width: 50px;
+}
+
+/* media qurie */
+@media (max-width: 1440px) {
+  .hm {
+    margin-left: 2px;
+    width: 25%;
+    font-size: 19px;
+    margin-top: 20px;
+  }
+  .dis {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .logo {
+    height: 100px;
+  }
+  .dd {
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .mm {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .hm {
+    margin-left: 200px;
+    width: 50%;
+  }
+  .dis {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 15px;
+    margin-left: 260px;
+    margin-top: -20px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 769px) {
+  /* achievement */
+  .pac {
+    flex-wrap: wrap;
+  }
+  .mm {
+    row-gap: 0px;
+  }
+  .hm {
+    margin-left: 5px;
+    width: 60%;
+    font-size: 13px;
+  }
+  .dis {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    margin-top: -20px;
+    flex-wrap: wrap;
+  }
+  .logo {
+    height: 70px;
+  }
+  .dd {
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 15px;
+  }
+  /* about page */
+  .nah {
+    width: 95%;
+  }
+  /* index page */
+  .hi {
+    width: 90%;
+  }
+  /* about page */
+}
+
+@media (max-width: 550px) {
+  .dd {
+    padding: 5px;
+  }
+}
+@media (max-width: 445px) {
+  .mm {
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .hm {
+    margin-left: 1px;
+    width: 50%;
+    font-size: 7px;
+  }
+  .dis {
+    display: flex;
+    gap: 5px;
+    font-size: 5px;
+    margin-left: 5px;
+    margin-top: -20px;
+    flex-wrap: wrap;
+  }
+  .logo {
+    height: 35px;
+  }
+  .dd {
+    padding: 5px 1px 5px 1px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 10px;
+  }
+  .card-front {
+    width: 50%;
+    height: 180px;
+  }
+  .x {
+    text-align: start;
+  }
+  .q {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .p {
+    height: 90px;
+    width: 200px;
+  }
+}
