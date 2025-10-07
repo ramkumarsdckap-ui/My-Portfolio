@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emoji Up Down</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5%;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+    .emoji {
+      font-size: 50px;
+      animation: upDown 3s ease-in-out infinite;
+      padding-top: 50px;
+    }
+
+    @keyframes upDown {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-80px);
+      }
+
+      20% {
+        transform: translateY(-60px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========================================================================== -->
+  <!-- same for all pages -->
+
+  <header>
+    <div class="mm">
+
+      <div>
+        <a href="index.html"> <img class="logo" src="logo.png" alt="loading..."> </a>
+      </div>
+
+      <div class="hm">
+        <h1>My Personal Website</h1>
+      </div>
+
+      <div>
+
+        <nav class="dis">
+          <div><a class="nav" href="index.html"><button class="dd">Home</button></a></div>
+          <div><a class="nav" href="summa.html"><button class="dd">About</button></a></div>
+          <div><a class="nav" href="project.html"><button class="dd">Project</button></a></div>
+          <div><a class="nav" href="achievement.html"><button class="dd">Achievement</button></a></div>
+          <div><a class="nav" href="contact.html"><button class="dd">Contact</button></a></div>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+  <div class="body">
+
+    <p class="paa" style="font-size: 25px;">I was very excited to explore new places. The thought of discovering hidden spots,
+      meeting different people, and experiencing unique cultures filled me with energy and curiosity. Every journey
+      feels like a new chapter waiting to be written, and the excitement of not knowing what’s next makes traveling
+      truly magical.</p><br>
+    <p class="paa" style="font-size: 25px;">✈️ Click the Plane to “Join the Journey”</p>
+    <nav>
+      <a href="about.html">
+        <div class="emoji">✈️</div>
+      </a><br>
+    </nav>
+    <p class="gold paa">Caught Me</p><br>
+
+  </div>
+</body>
+
+</html>

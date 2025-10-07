@@ -55,11 +55,14 @@ body {
   background-color: rgb(56, 86, 100);
   width: 50%;
   margin: auto;
-  margin-top: 200px;
+  margin-top: 100px;
   line-height: 80px;
   box-shadow: 0px 0px 4px 6px rgb(255, 255, 255);
   border: 4px solid rgb(94, 92, 92);
   border-radius: 10px;
+}
+.gold{
+   color: rgb(207, 174, 83);
 }
 .gig {
   font-size: 19px;
@@ -81,55 +84,164 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  margin-bottom: 60px;
 }
+
 .sum {
   display: flex;
   flex-direction: column;
 }
+
 .hea {
-  align-items: center;
+  text-align: center;
   font-size: 24px;
   color: rgb(207, 174, 83);
+  margin-bottom: 10px;
 }
+
 .x {
-  font-size: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 600px;
+  color: #ffffff;
+  line-height: 1.6;
+  padding: 0 15px;
 }
+
+/* === Buttons === */
 .d {
   background-color: rgb(134, 136, 138);
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid white;
   font-size: 19px;
   box-shadow: 0px 0px 2px 2px rgb(131, 125, 125);
+  cursor: pointer;
+  transition: 0.9s ease;
 }
+
 .d:hover {
   color: black;
+  background-color: rgb(200, 200, 200);
   border: 2px solid rgb(129, 129, 129);
   box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
 }
-.im {
-  width: 40%;
-}
-.hea {
-  text-align: center;
-}
-.hr {
-  margin-top: 50px;
-}
-.di {
-  margin-top: 20%;
-}
-.rfle {
 
-  margin-top: 100px;
-  margin-left: 150px;
+/* === Card Layout === */
+.card {
+  width: 500px;
+  height: 350px;
+  perspective: 900px;
+  position: relative;
+  z-index: 1;
 }
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid white;
+  box-shadow: 0px 0px 2px 6px rgb(156, 116, 5);
+  backface-visibility: hidden;
+}
+
+.card-front img,
+.card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* === Dividers & spacing === */
+
+
+.di {
+  margin-top: 20px;
+}
+
+.rfle {
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+/* === Responsive Design === */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .card {
+    width: 400px;
+    height: 280px;
+  }
+
+  .x {
+    font-size: 1.1rem;
+    max-width: 500px;
+  }
+
+  .d {
+    font-size: 17px;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .ahh {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 15px;
+  }
+
+  .card {
+    width: 90%;
+    height: 250px;
+  }
+
+  .x {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .d {
+    font-size: 16px;
+  }
+
+  .hea {
+    font-size: 20px;
+  }
+
+  .hr {
+    width: 90%;
+  }
+}
+
 /* ======================================================================== */
 /* about */
 .mee {
   border-radius: 10px;
   width: 250px;  
-  height: 450px;
+
 }
 .q {
   display: flex;
@@ -153,6 +265,11 @@ body {
   align-items: center;
   border-radius: 10px;
 }
+.ia{
+  margin-left: 57px;
+  width: 250px;
+  height: 347px;
+}
 .ha {
   background-color: rgb(56, 86, 100);
   width: 50%;
@@ -161,6 +278,13 @@ body {
   line-height: 30px;
   box-shadow: 0px 0px 4px 6px rgb(255, 255, 255);
   border: 4px solid rgb(94, 92, 92);
+}
+.low{
+  display: flex;
+  flex-direction: column;
+}
+.low img{
+  border-radius: 50px 0px 50px 0px;
 }
 /* ============================================================== */
 /* contact form */
@@ -264,6 +388,14 @@ body {
   height: 50px;
   width: 50px;
 }
+.emoji a{
+  color: rgb(207, 174, 83);
+  padding-top: 150px;
+}
+.emoji a:hover i {
+  color: white;
+  transform: scale(1.08);
+}
 
 /* media qurie */
 @media (max-width: 1440px) {
@@ -309,6 +441,9 @@ body {
     margin-top: -20px;
     flex-wrap: wrap;
   }
+  .paa{
+    font-size: 20px;
+  }
 }
 @media (max-width: 769px) {
   /* achievement */
@@ -347,7 +482,14 @@ body {
   .hi {
     width: 90%;
   }
-  /* about page */
+  /* contact */
+  .kis{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .p{
+    width: 350px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -384,20 +526,19 @@ body {
     border: 1px solid white;
     font-size: 10px;
   }
-  .card-front {
-    width: 50%;
-    height: 180px;
+  .se{
+    font-size: 15px;
   }
-  .x {
-    text-align: start;
+  .paa{
+    font-size: 15px;
   }
-  .q {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  .emoji{
+    font-size: 25px;
   }
-  .p {
-    height: 90px;
-    width: 200px;
+}
+@media (max-width:375px){
+  .p{
+    width: 230px;
+    height: 100px;
   }
 }

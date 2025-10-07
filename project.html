@@ -11,7 +11,7 @@
         .card {
             width: 500px;
             height: 350px;
-            perspective: 900px;
+            perspective: 1000px;
         }
 
         header {
@@ -30,7 +30,7 @@
             height: 100%;
             transition: transform 0.9s;
             transform-style: preserve-3d;
-            
+
         }
 
         .card:hover .card-inner {
@@ -61,21 +61,49 @@
             transform: rotateY(180deg);
         }
 
-@media (max-width :768px){
-    .card-front,
-        .card-back {
-            position: absolute;
-            width: 50%;
-            height: 50%;
-            backface-visibility: hidden;
-            border-radius: 10px;
-            overflow: hidden;
-            border: 3px solid white;
-            box-shadow: 0px 0px 2px 6px rgb(156, 116, 5);
+        .x {
+            font-size: 24px;
         }
 
+        @media (max-width :768px) {
 
-}
+            .card-front,
+            .card-back {
+                position: absolute;
+                width: 80%;
+                height: 80%;
+                backface-visibility: hidden;
+                border-radius: 10px;
+                border: 3px solid white;
+                box-shadow: 0px 0px 2px 6px rgb(156, 116, 5);
+            }
+
+            .x {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width :426px) {
+
+            .card-front,
+            .card-back {
+                margin-left: 120px;
+                position: absolute;
+                width: 50%;
+                height: 50%;
+                border-radius: 10px;
+                border: 3px solid white;
+                box-shadow: 0px 0px 2px 6px rgb(156, 116, 5);
+            }
+
+            .x {
+                font-size: 20px;
+            }
+        }
+
+        .rfle {
+            overflow-x: hidden;
+        }
 
     </style>
 </head>
@@ -97,9 +125,10 @@
 
             <div>
 
+
                 <nav class="dis">
                     <div><a class="nav" href="index.html"><button class="dd">Home</button></a></div>
-                    <div><a class="nav" href="about.html"><button class="dd">About</button></a></div>
+                    <div><a class="nav" href="summa.html"><button class="dd">About</button></a></div>
                     <div><a class="nav" href="project.html"><button class="dd">Project</button></a></div>
                     <div><a class="nav" href="achievement.html"><button class="dd">Achievement</button></a></div>
                     <div><a class="nav" href="contact.html"><button class="dd">Contact</button></a></div>
@@ -232,12 +261,18 @@
         </div>
         <footer class="rit">
             <p>&#169 2025 All Rights Reserved</p>
-        <div>
-            <a href="https://www.linkedin.com/feed/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf0e1;</i></a>
-            <a href="https://github.com/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf09b;</i></a>
-            <a href="https://www.instagram.com/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf16d;</i></a>
-            <a href="https://www.youtube.com/"><i style="font-size:44px ;color: #ffffff;" class="fa">&#xf16a;</i></a>
-        </div>
+
+            <div class="emoji">
+                <a class="hrr" href="https://www.linkedin.com/feed/"><i style="font-size:44px ;"
+                        class="fa">&#xf0e1;</i></a>
+                <a class="hrr" href="https://github.com/"><i style="font-size:44px ;"
+                        class="fa">&#xf09b;</i></a>
+                <a class="hrr" href="https://www.instagram.com/"><i style="font-size:44px ;"
+                        class="fa">&#xf16d;</i></a>
+                <a class="hrr" href="https://www.youtube.com/"><i style="font-size:44px ;"
+                        class="fa">&#xf16a;</i></a>
+            </div>
+            
         </footer>
     </div>
 </body>
