@@ -1,21 +1,19 @@
 /* ========================================================== */
 /* Header + Home */
-.hm {
-  font-size: 24px;
+.hm h1{
+  font-size: 34px;
   color: aliceblue;
-  margin-top: 1%;
 }
 .dis {
   display: flex;
-  gap: 20px;
-  font-size: 20px;
+  gap: 10px;
   margin-top: 9%;
 }
 .mm {
   display: flex;
   background-color: rgb(87, 113, 126);
-  gap: 200px;
-  box-shadow: 0px 0px 4px 6px rgb(94, 92, 92);
+  gap: 150px;
+  box-shadow: rgb(156, 116, 5) 0px 0px 2px 4px;
 }
 .nav {
   color: aliceblue;
@@ -28,7 +26,7 @@ header {
   font-size: 100px;
 }
 .dd {
-  background-color: rgb(87, 113, 126);
+  background-color: rgb(168, 160, 87);
   color: rgb(255, 255, 255);
   padding: 10px;
   border-radius: 10px;
@@ -47,7 +45,7 @@ header {
   padding: 10px;
 }
 body {
-  background-image: url(back.png);
+  background-image: url(asset/back.png);
   background-size: cover;
   color: white;
 }
@@ -55,9 +53,9 @@ body {
   background-color: rgb(56, 86, 100);
   width: 50%;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 75px;
   line-height: 80px;
-  box-shadow: 0px 0px 4px 6px rgb(255, 255, 255);
+  box-shadow: rgb(156, 116, 5) 0px 0px 2px 4px;
   border: 4px solid rgb(94, 92, 92);
   border-radius: 10px;
 }
@@ -76,6 +74,9 @@ body {
 .kk {
   width: 15%;
   margin: auto;
+}
+.paa{
+  font-size: 20px;
 }
 /* ========================================================== */
 /* project*/
@@ -108,25 +109,6 @@ body {
   color: #ffffff;
   line-height: 1.6;
   padding: 0 15px;
-}
-
-/* === Buttons === */
-.d {
-  background-color: rgb(134, 136, 138);
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid white;
-  font-size: 19px;
-  box-shadow: 0px 0px 2px 2px rgb(131, 125, 125);
-  cursor: pointer;
-  transition: 0.9s ease;
-}
-
-.d:hover {
-  color: black;
-  background-color: rgb(200, 200, 200);
-  border: 2px solid rgb(129, 129, 129);
-  box-shadow: 0px 0px 2px 2px rgb(255, 255, 255);
 }
 
 /* === Card Layout === */
@@ -188,7 +170,13 @@ body {
 /* === Responsive Design === */
 
 /* Tablets */
+
 @media (max-width: 1024px) {
+  .hm h1{
+  font-size: 30px;
+  color: aliceblue;
+  margin-top: 5%;
+}
   .card {
     width: 400px;
     height: 280px;
@@ -207,6 +195,11 @@ body {
 
 /* Mobile Devices */
 @media (max-width: 768px) {
+    .hm h1{
+  font-size: 25px;
+  color: aliceblue;
+  margin-top: 5%;
+}
   .ahh {
     flex-direction: column;
     gap: 1rem;
@@ -259,14 +252,13 @@ body {
   height: 100px;
 }
 .nah {
-  font-size: 20px;
   display: flex;
   flex-direction: column;
+  font-size: 20px;
   align-items: center;
   border-radius: 10px;
 }
 .ia{
-  margin-left: 57px;
   width: 250px;
   height: 347px;
 }
@@ -283,9 +275,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.low img{
-  border-radius: 50px 0px 50px 0px;
-}
+
 /* ============================================================== */
 /* contact form */
 .rep,
@@ -358,7 +348,7 @@ body {
 
 .rit {
   text-align: center;
-  line-height: 90px;
+  /* line-height: 90px; */
   font-size: 20px;
 }
 
@@ -377,9 +367,9 @@ body {
   display: flex;
 }
 .iim {
-  width: 90%;
-  padding-left: 5%;
-  padding-top: 7%;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 5%;
 }
 .paru {
   width: 100%;
@@ -390,18 +380,20 @@ body {
 }
 .emoji a{
   color: rgb(207, 174, 83);
-  padding-top: 150px;
+  /* padding-top:150px ; */
 }
 .emoji a:hover i {
   color: white;
   transform: scale(1.08);
+}
+.emoji a i {
+  margin-top: 1%;
 }
 
 /* media qurie */
 @media (max-width: 1440px) {
   .hm {
     margin-left: 2px;
-    width: 25%;
     font-size: 19px;
     margin-top: 20px;
   }
@@ -455,8 +447,8 @@ body {
   }
   .hm {
     margin-left: 5px;
-    width: 60%;
     font-size: 13px;
+    margin-top: 7px;
   }
   .dis {
     display: flex;
@@ -504,10 +496,11 @@ body {
     width: 100%;
     padding-bottom: 10px;
   }
-  .hm {
-    margin-left: 1px;
-    width: 50%;
-    font-size: 7px;
+  
+  .hm h1{
+    font-size: 17px;
+    margin-top: 10px;
+    flex-direction: row;
   }
   .dis {
     display: flex;
@@ -535,10 +528,20 @@ body {
   .emoji{
     font-size: 25px;
   }
+    .nah {
+    width: 98%;
+  }
 }
+
 @media (max-width:375px){
   .p{
     width: 230px;
     height: 100px;
+  }
+}
+@media (max-width:325px){
+  .hm h1{
+    font-size: 15px;
+    margin-top: 10px;
   }
 }
