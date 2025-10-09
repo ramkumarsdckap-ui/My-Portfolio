@@ -404,7 +404,7 @@ body {
 }
 
 /* media qurie */
-@media (max-width: 1440px) {
+@media (max-width: 1550px) {
   .web {
     margin-left: 2px;
     font-size: 19px;
@@ -563,5 +563,5 @@ body {
   }
 }
 @media(min-width:1500){
-  
+
 }
